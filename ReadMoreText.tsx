@@ -8,6 +8,7 @@ interface TextProperties {
   isTruncatedText: boolean;
 }
 export interface  ReadMoreTextProps extends TextProps {
+  style?: StyleProp<TextStyle>;
   numberOfLines?: number;
   children: string;
   readMoreText?: string;
@@ -16,6 +17,7 @@ export interface  ReadMoreTextProps extends TextProps {
   readLessStyle?: StyleProp<TextStyle>;
 }
 export default function ReadMoreText({
+  style,
   numberOfLines = 1,
   children,
   readMoreText = "more",
@@ -66,6 +68,7 @@ export default function ReadMoreText({
         </Text>
       )}
       <Text
+        style={style}
         numberOfLines={text.length === 0 ? numberOfLines : 0}
         onTextLayout={({ nativeEvent: { lines } }) => {
             if (text.length > 0) {
