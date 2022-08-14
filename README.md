@@ -1,7 +1,8 @@
 # react-native-read-more-text
 React native library to show text in a brief way and expand it when needed.  It is a lightweight inline read more text component. It is written in Typescript and supports both TS/JS. It can be used with react native cli and expo both.
 
-![Example](example/seemore.gif)
+![Screencast-from-08-14-2022-08_57_52-PM](https://user-images.githubusercontent.com/33664562/184545189-81c3baa3-f59d-4228-975f-23409274e2b8.gif)
+
 
 ### Installation
 
