@@ -1,0 +1,48 @@
+{
+  "name": "@amuizz/read-more-text",
+  "version": "1.0.8",
+  "description": "The package contains an inline readmore text component",
+  "main": "ReadMoreText.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native-read-more",
+    "react-native-component",
+    "react-native-read-more-text",
+    "read-more-text",
+    "read-less-text",
+    "react-native",
+    "read",
+    "more",
+    "less",
+    "text",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "javascript",
+    "typescript",
+    "inline"
+  ],
+  "author": {"name":"Abdul Muizz", "email": "amuizz19@gmail.com"},
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*",
+    "react-native-web": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.66.13",
+    "typescript": "~4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amuizz20/react-native-read-more-text"
+  },
+  "license": "ISC"
+}
