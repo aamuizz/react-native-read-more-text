@@ -1,21 +1,14 @@
-import React, { memo, useState } from "react";
-import { TextLayoutLine, Text, TextStyle, StyleProp, TextProps } from "react-native";
+import React, { useState } from "react";
+import { TextLayoutLine, Text } from "react-native";
+import { IReadMoreTextProps } from "./interfaces/IReadMoreTextProps";
 
-import { isAndroid, isiOS } from "./Platform";
+import { isAndroid, isiOS } from "./util/Platform";
 
 interface TextProperties {
   length: number;
   isTruncatedText: boolean;
 }
-export interface  ReadMoreTextProps extends TextProps {
-  style?: StyleProp<TextStyle>;
-  numberOfLines?: number;
-  children: string;
-  readMoreText?: string;
-  readLessText?: string;
-  readMoreStyle?: StyleProp<TextStyle>;
-  readLessStyle?: StyleProp<TextStyle>;
-}
+
 export default function ReadMoreText({
   style,
   numberOfLines = 1,
@@ -25,7 +18,7 @@ export default function ReadMoreText({
   readMoreStyle = {color: "black"},
   readLessStyle = {color: "black"},
   ...props
-}: ReadMoreTextProps) {
+}: IReadMoreTextProps) {
   const [readMore, setReadMore] = useState<boolean>(false);
   const [text, setText] = useState<TextProperties>({
     length: 0,
@@ -52,6 +45,10 @@ export default function ReadMoreText({
   }
   return (
     <>
+    {/** 
+        iOS always requires one element without a line number 
+        to determine the number of lines.
+       */}
       {isiOS && (
         <Text
           style={{height: 0}}

@@ -1,6 +1,6 @@
 {
   "name": "@amuizz/read-more-text",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The package contains an inline readmore text component",
   "main": "ReadMoreText.tsx",
   "scripts": {
@@ -12,6 +12,8 @@
     "react-native-read-more-text",
     "read-more-text",
     "read-less-text",
+    "read more",
+    "inline read more",
     "react-native",
     "read",
     "more",
@@ -27,8 +29,12 @@
     "typescript",
     "inline"
   ],
-  "author": {"name":"Abdul Muizz", "email": "amuizz19@gmail.com"},
+  "author": {
+    "name": "Abdul Muizz",
+    "email": "amuizz19@gmail.com"
+  },
   "dependencies": {
+    "eslint": "^8.22.0",
     "react": "*",
     "react-dom": "*",
     "react-native": "*",
