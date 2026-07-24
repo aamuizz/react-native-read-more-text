@@ -85,6 +85,7 @@ export default function ReadMoreText({
             style={getReadMoreStyle()}
             onPress={() => setReadMore(!readMore)}
           >
+            {" "}
             {readMore ? readLessText : readMoreText}
           </Text>
         )}
