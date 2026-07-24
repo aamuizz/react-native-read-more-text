@@ -8,4 +8,6 @@ export interface  IReadMoreTextProps extends TextProps {
     readLessText?: string;
     readMoreStyle?: StyleProp<TextStyle>;
     readLessStyle?: StyleProp<TextStyle>;
+    readMoreSpace?: number;
+    readLessSpace?: number;
 }

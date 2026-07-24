@@ -17,6 +17,8 @@ export default function ReadMoreText({
   readLessText = "less",
   readMoreStyle = {color: "black"},
   readLessStyle = {color: "black"},
+  readMoreSpace = 1,
+  readLessSpace = 1,
   ...props
 }: IReadMoreTextProps) {
   const [readMore, setReadMore] = useState<boolean>(false);
@@ -85,7 +87,7 @@ export default function ReadMoreText({
             style={getReadMoreStyle()}
             onPress={() => setReadMore(!readMore)}
           >
-            {" "}
+            {" ".repeat(readMore ? readLessSpace : readMoreSpace)}
             {readMore ? readLessText : readMoreText}
           </Text>
         )}

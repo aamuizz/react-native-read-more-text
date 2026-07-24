@@ -39,10 +39,12 @@ export default Test;
 | Prop | Type | Required | Note |
 |---|---|---|---|
 | `style` | `object or array` | no | text style
-| `seeMoreText` | `string` | no | defaults to `more`
-| `seeMoreStyle` | `object or array` | no | text style for `more` text
-| `seeLessText` | `string` | no | defaults to `less`
-| `seeLessStyle` | `object or array` | no | text style for `less` text
+| `readMoreText` | `string` | no | defaults to `more`
+| `readMoreStyle` | `object or array` | no | text style for `more` text
+| `readLessText` | `string` | no | defaults to `less`
+| `readLessStyle` | `object or array` | no | text style for `less` text
+| `readMoreSpace` | `number` | no | number of spaces before the `more` text, defaults to `1`
+| `readLessSpace` | `number` | no | number of spaces before the `less` text, defaults to `1`
 | `numberOfLines` | `number` | no | defaults to `1`
 
 Any additional props can be passed down to underlying `Text` component.
